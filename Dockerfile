@@ -1,7 +1,7 @@
 FROM alpine:3.20.3
 
 RUN apk --no-cache add \
-    curl expect openvpn oath-toolkit-oathtool
+    openvpn curl expect oath-toolkit-oathtool
 
 ENV LOCAL_NETWORK= \
     OPENVPN_AUTO_CONFIG=true \
